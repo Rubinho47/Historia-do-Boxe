@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papel de Parede</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imagens/Logo_luva_pendurada.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="../plugins/magnific-popup.css">
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.bxslider.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.slider').bxSlider({
+            mode: 'horizontal',
+            auto: true,
+            pager: true,
+        });
+
+        $('#galeria-fotos').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title');
+			}
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, 
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+		
+	});
+    });
+    </script>
+</head>]
+    
+<body background="../imagens/luvadeboxe.jpg">
+    
+    <header>
+    <nav id="menu-h">
+      
+            <ul>
+                <img src="../imagens/Logo_luva_pendurada.jpg" id="luva">
+                <li><a href="../index.html" class="../icon-home-circled">Home</a></li> 
+                <li><a href="../internas/principais_lutadores.html">Principais lutadores</a></li>
+                <li><a href="../https://www.esportelandia.com.br/artes-marciais/golpes-de-boxe/" target="_blank"> Golpes do Boxe </a></li>
+                <li><a href="../https://www.performaacademia.com.br/blog/fitness/sabe-quais-sao-os-beneficios-do-boxe-para-o-corpo-entenda-aqui"class="">Beneficios do Boxe para a saude</a></li>
+                <li><a href="../internas/video_lutas.html"class="">Lutas de alguns lutadores</a></li>
+                <li><a href="../internas/papel_de_parede.html">Papel de Parede</a></li>
+            </ul>
+    </nav>
+
+
+    <section id="fotos">
+        <div class="container">
+            <div id="galeria-fotos">
+                <a href="../imagens/fotos/fotosg/papel_de_parede_boxe.jpg" title="Foto 01"><img src="../imagens/fotos/fotosp/papel_de_parede_boxe.jpg" alt=""></a>
+                <a href="../imagens/fotos/fotosg/papel_de_parede_boxeman.jpg" title="Foto 02"><img src="../imagens/fotos/fotosp/papel_de_parede_boxeman.jpg" alt=""></a>
+                <a href="../imagens/fotos/fotosg/papel_de_parede_mayweather.jpg" title="Foto 04"><img src="../imagens/fotos/fotosp/papel_de_parede_mayweather.jpg" alt=""></a>
+                <a href="../imagens/fotos/fotosg/papel_de_parede_ringue_2.jpg" title="Foto 05"><img src="../imagens/fotos/fotosp/papel_de_parede_ringue_2.jpg" alt=""></a>
+
+                <a href="../imagens/fotos/fotosg/Carinha_do_boxe.jpg" title="Foto 01"><img src="../imagens/fotos/fotosp/Carinha_do_boxe.jpg" alt=""></a>
+                <a href="../imagens/fotos/fotosg/Creed.jpg" title="Foto 02"><img src="../imagens/fotos/fotosp/Creed.jpg" alt=""></a>
+                <a href="../imagens/fotos/fotosg/Drago.jpg" title="Foto 04"><img src="../imagens/fotos/fotosp/Drago.jpg" alt=""></a>
+                <a href="../imagens/fotos/fotosg/Luva_boxe.jpg" title="Foto 05"><img src="../imagens/fotos/fotosp/Luva_boxe.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="rodape">
+            <address>
+                1° periodo no curso de Sistemas de Informação<br>
+                Feito por: Rubinho de Sá <a href="https://instagram.com/brsevr?igshid=YmMyMTA2M2Y=" class="icon-instagram redes">brsevr</a><br>
+                Instituição: <a href="https://www.unirios.edu.br/">Unirios</a><br>
+            </address>
+        </footer>
+        </fieldset>
+       
+</body>
+
+</html>
